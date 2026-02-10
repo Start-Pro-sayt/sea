@@ -1,0 +1,299 @@
+/* Базовые стили */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    line-height: 1.6;
+    color: #123047;
+    background-color: #f3f8fc;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Шапка и навигация */
+.main-header {
+    background: linear-gradient(135deg, #0b6477, #239fce);
+    color: #ffffff;
+    padding: 20px 0 15px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.main-header h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    margin-top: 4px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.main-nav {
+    margin-top: 12px;
+}
+
+.main-nav a {
+    color: #e1f5ff;
+    text-decoration: none;
+    margin-right: 14px;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.main-nav a:hover {
+    background: rgba(255,255,255,0.18);
+}
+
+.main-nav a.active {
+    background: #ffffff;
+    color: #0b6477;
+}
+
+/* Герой-блок */
+.hero {
+    position: relative;
+    background-image: url("img/index.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.hero-overlay {
+    background: linear-gradient(135deg, rgba(11,100,119,0.9), rgba(35,159,206,0.85));
+    position: absolute;
+    inset: 0;
+}
+
+.hero-content {
+    position: relative;
+    padding: 50px 0;
+}
+
+.hero h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 550px;
+    font-size: 15px;
+    margin-bottom: 18px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #0b6477;
+    padding: 8px 18px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25);
+}
+
+/* Инфо-блоки */
+.info-block {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0 30px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.info-block h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.simple-list {
+    list-style: disc;
+    padding-left: 18px;
+    font-size: 15px;
+}
+
+.simple-list li {
+    margin-bottom: 6px;
+}
+
+/* Страница с морями: полностраничные блоки */
+.seas-page {
+    margin-top: 15px;
+}
+
+.sea-full-block {
+    position: relative;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.sea-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+.sea-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(4,33,49,0.8), rgba(4,33,49,0.2));
+}
+
+.sea-content {
+    position: relative;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+.sea-content h2 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.sea-content p {
+    max-width: 650px;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.sea-more {
+    display: inline-block;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    border: 1px solid rgba(255,255,255,0.7);
+    background: rgba(255,255,255,0.05);
+}
+
+.sea-full-block:hover .sea-bg {
+    transform: scale(1.05);
+}
+
+/* Модальные окна */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.modal-content {
+    background: #ffffff;
+    border-radius: 12px;
+    max-width: 900px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+}
+
+.modal-close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    border: none;
+    background: transparent;
+    font-size: 26px;
+    cursor: pointer;
+    color: #123047;
+}
+
+.modal-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 20px;
+}
+
+.modal-img {
+    flex: 1 1 280px;
+    max-width: 360px;
+}
+
+.modal-text {
+    flex: 1 1 260px;
+}
+
+.modal-text h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.modal-text h3 {
+    margin-top: 8px;
+    margin-bottom: 4px;
+    font-size: 16px;
+}
+
+/* Подвал */
+.main-footer {
+    background: #0b3d4b;
+    color: #e1f5ff;
+    font-size: 13px;
+    padding: 14px 0;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 700px) {
+    .sea-content h2 {
+        font-size: 18px;
+    }
+
+    .sea-content p {
+        font-size: 14px;
+    }
+
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        padding: 32px 0;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .main-header h1 {
+        font-size: 22px;
+    }
+}

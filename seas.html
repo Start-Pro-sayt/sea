@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Моря России – подробное описание</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="main-header">
+    <div class="container">
+        <h1>Моря России</h1>
+        <p class="subtitle">Нажмите на море, чтобы узнать о его флоре и фауне</p>
+        <nav class="main-nav">
+            <a href="index.html">Главная</a>
+            <a href="seas.html" class="active">Все моря</a>
+        </nav>
+    </div>
+</header>
+
+<main class="seas-page">
+
+    <!-- Пример блока: Баренцево море -->
+    <section class="sea-full-block" data-modal="barents-modal">
+        <div class="sea-bg" style="background-image: url('img/barents_small.jpg');"></div>
+        <div class="sea-overlay"></div>
+        <div class="sea-content container">
+            <h2>Баренцево море (Северный Ледовитый океан)</h2>
+            <p>
+                Холодное море с влиянием теплого течения, важный район рыболовства.
+            </p>
+            <span class="sea-more">Подробнее о флоре и фауне</span>
+        </div>
+    </section>
+
+    <!-- Белое море -->
+    <section class="sea-full-block" data-modal="white-modal">
+        <div class="sea-bg" style="background-image: url('img/white_small.jpg');"></div>
+        <div class="sea-overlay"></div>
+        <div class="sea-content container">
+            <h2>Белое море (Северный Ледовитый океан)</h2>
+            <p>
+                Небольшое внутреннее море с холодной водой и разнообразным прибрежным рельефом.
+            </p>
+            <span class="sea-more">Подробнее о флоре и фауне</span>
+        </div>
+    </section>
+
+    <!-- Карское море -->
+    <section class="sea-full-block" data-modal="kara-modal">
+        <div class="sea-bg" style="background-image: url('img/kara_small.png');"></div>
+        <div class="sea-overlay"></div>
+        <div class="sea-content container">
+            <h2>Карское море (Северный Ледовитый океан)</h2>
+            <p>
+                Типичное арктическое море с длительным ледоставом и суровым климатом.
+            </p>
+            <span class="sea-more">Подробнее о флоре и фауне</span>
+        </div>
+    </section>
+
+    <!-- Море Лаптевых -->
+    <section class="sea-full-block" data-modal="laptev-modal">
+        <div class="sea-bg" style="background-image: url('img/laptev_small.jpg');"></div>
+        <div class="sea-overlay"></div>
+        <div class="sea-content container">
+            <h2>Море Лаптевых (Северный Ледовитый океан)</h2>
+            <p>
+                Одно из самых холодных морей России, большую часть года во льдах.
+            </p>
+            <span class="sea-more">Подробнее о флоре и фауне</span>
+        </div>
+    </section>
+
+    <!-- Восточно-Сибирское море -->
+    <section class="sea-full-block" data-modal="east-sib-modal">
+        <div class="sea-bg" style="background-image: url('img/east_siberian_small.jpeg');"></div>
+        <div class="sea-overlay"></div>
+        <div class="sea-content container">
+            <h2>Восточно-Сибирское море (Северный Ледовитый океан)</h2>
+            <p>
+                Высокоарктическое море с низкой температурой и бедной фауной.
+            </p>
+            <span class="sea-more">Подробнее о флоре и фауне</span>
+        </div>
+    </section>
+
+    <!-- Чукотское море -->
+    <section class="sea-full-block" data-modal="chukchi-modal">
+        <div class="sea-bg" style="background-image: url('img/chukchi_small.jpg');"></div>
+        <div class="sea-overlay"></div>
+        <div class="sea-content container">
+            <h2>Чукотское море (Северный Ледовитый океан)</h2>
+            <p>
+                Переходная зона между Арктикой и Тихим океаном.
+            </p>
+            <span class="sea-more">Подробнее о флоре и фауне</span>
+        </div>
+    </section>
+
+    <!-- Берингово море -->
+    <section class="sea-full-block" data-modal="bering-modal">
+        <div class="sea-bg" style="background-image: url('img/bering_small.jpg');"></div>
+        <div class="sea-overlay"></div>
+        <div class="sea-content container">
+            <h2>Берингово море (Тихий океан)</h2>
+            <p>
+                Холодное, но очень продуктивное море с богатым рыбным промыслом.
+            </p>
+            <span class="sea-more">Подробнее о флоре и фауне</span>
+        </div>
+    </section>
+
+    <!-- Охотское море -->
+    <section class="sea-full-block" data-modal="okhotsk-modal">
+        <div class="sea-bg" style="background-image: url('img/okhotsk_small.jfif');"></div>
+        <div class="sea-overlay"></div>
+        <div class="sea-content container">
+            <h2>Охотское море (Тихий океан)</h2>
+            <p>
+                Море с суровыми зимами, льдами и очень богатым подводным миром.
+            </p>
+            <span class="sea-more">Подробнее о флоре и фауне</span>
+        </div>
+    </section>
+
+    <!-- Японское море -->
+    <section class="sea-full-block" data-modal="japan-modal">
+        <div class="sea-bg" style="background-image: url('img/japan_small.jpg');"></div>
+        <div class="sea-overlay"></div>
+        <div class="sea-content container">
+            <h2>Японское море (Тихий океан)</h2>
+            <p>
+                Одно из самых богатых видами морей России, на стыке холодных и теплых течений.
+            </p>
+            <span class="sea-more">Подробнее о флоре и фауне</span>
+        </div>
+    </section>
+
+    <!-- Балтийское море -->
+    <section class="sea-full-block" data-modal="baltic-modal">
+        <div class="sea-bg" style="background-image: url('img/baltic_small.jpg');"></div>
+        <div class="sea-overlay"></div>
+        <div class="sea-content container">
+            <h2>Балтийское море (Атлантический океан)</h2>
+            <p>
+                Малосоленое море с относительно бедной морской фауной и сильным влиянием пресной воды.
+            </p>
+            <span class="sea-more">Подробнее о флоре и фауне</span>
+        </div>
+    </section>
+
+    <!-- Черное море -->
+    <section class="sea-full-block" data-modal="black-modal">
+        <div class="sea-bg" style="background-image: url('img/black_small.jfif');"></div>
+        <div class="sea-overlay"></div>
+        <div class="sea-content container">
+            <h2>Черное море (Атлантический океан)</h2>
+            <p>
+                Самое теплое море России, курортный регион, но на глубинах >200 м почти нет жизни из-за сероводорода.
+            </p>
+            <span class="sea-more">Подробнее о флоре и фауне</span>
+        </div>
+    </section>
+
+    <!-- Азовское море -->
+    <section class="sea-full-block" data-modal="azov-modal">
+        <div class="sea-bg" style="background-image: url('img/azov_small.jpg');"></div>
+        <div class="sea-overlay"></div>
+        <div class="sea-content container">
+            <h2>Азовское море (Атлантический океан)</h2>
+            <p>
+                Очень мелководное, хорошо прогревается, богато планктоном и ракообразными.
+            </p>
+            <span class="sea-more">Подробнее о флоре и фауне</span>
+        </div>
+    </section>
+
+    <!-- Каспийское море -->
+    <section class="sea-full-block" data-modal="caspian-modal">
+        <div class="sea-bg" style="background-image: url('img/caspian_small.jpg');"></div>
+        <div class="sea-overlay"></div>
+        <div class="sea-content container">
+            <h2>Каспийское море (замкнутое)</h2>
+            <p>
+                Крупнейший замкнутый водоем мира с уникальной смесью морских и пресноводных видов.
+            </p>
+            <span class="sea-more">Подробнее о флоре и фауне</span>
+        </div>
+    </section>
+
+</main>
+
+<!-- МОДАЛЬНЫЕ ОКНА ДЛЯ КАЖДОГО МОРЯ -->
+
+<!-- Баренцево море -->
+<div class="modal" id="barents-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <img src="img/barents_big.jpg" alt="Баренцево море" class="modal-img">
+            <div class="modal-text">
+                <h2>Баренцево море</h2>
+                <h3>Флора</h3>
+                <p>
+                    В Баренцевом море из-за низких температур преобладают холодолюбивые водоросли и фитопланктон, 
+                    которые приспособлены к короткому периоду освещенности и длительным полярным ночам.
+                </p>
+                <h3>Фауна</h3>
+                <p>
+                    Фауна богата промысловыми видами рыб (треска, пикша, сельдь), 
+                    а также морскими млекопитающими (тюлени) и многочисленными колониями морских птиц.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Белое море -->
+<div class="modal" id="white-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <img src="img/white_big.JPG" alt="Белое море" class="modal-img">
+            <div class="modal-text">
+                <h2>Белое море</h2>
+                <h3>Флора</h3>
+                <p>
+                    В Белом море распространены бурые и зеленые водоросли, морские травы и планктонные водоросли, 
+                    особенно в прибрежной зоне и мелководьях.
+                </p>
+                <h3>Фауна</h3>
+                <p>
+                    Здесь обитают моллюски, морские звезды, ракообразные, различные виды рыб, 
+                    а также белухи и тюлени, хорошо приспособленные к холодной воде.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Карское море -->
+<div class="modal" id="kara-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <img src="img/kara_big.jpeg" alt="Карское море" class="modal-img">
+            <div class="modal-text">
+                <h2>Карское море</h2>
+                <h3>Флора</h3>
+                <p>
+                    Флора бедна, преобладают микроскопические водоросли и планктон, 
+                    устойчивые к низким температурам и льду.
+                </p>
+                <h3>Фауна</h3>
+                <p>
+                    Характерны арктические виды рыб, тюлени и моржи; 
+                    на льдах часто встречаются полярные медведи, использующие море для охоты.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Море Лаптевых -->
+<div class="modal" id="laptev-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <img src="img/laptev_big.jpg" alt="Море Лаптевых" class="modal-img">
+            <div class="modal-text">
+                <h2>Море Лаптевых</h2>
+                <h3>Флора</h3>
+                <p>
+                    Из-за экстремально низких температур и длительных льдов флора представлена преимущественно 
+                    микроскопическими водорослями и редкими припаевыми водорослями.
+                </p>
+                <h3>Фауна</h3>
+                <p>
+                    Фауна типично арктическая: немногочисленные виды рыб, планктон, 
+                    моржи и тюлени, использующие кромку льда как место отдыха и охоты.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Восточно-Сибирское море -->
+<div class="modal" id="east-sib-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <img src="img/east_siberian_big.JPG" alt="Восточно-Сибирское море" class="modal-img">
+            <div class="modal-text">
+                <h2>Восточно-Сибирское море</h2>
+                <h3>Флора</h3>
+                <p>
+                    Флора очень бедна, доминируют микроскопические водоросли в толще воды и на нижней поверхности льда.
+                </p>
+                <h3>Фауна</h3>
+                <p>
+                    Фауна также ограничена арктическими видами: немногочисленные рыбы, 
+                    зоопланктон и отдельные виды бентосных организмов.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Чукотское море -->
+<div class="modal" id="chukchi-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <img src="img/chukchi_big.jpg" alt="Чукотское море" class="modal-img">
+            <div class="modal-text">
+                <h2>Чукотское море</h2>
+                <h3>Флора</h3>
+                <p>
+                    Флора представлена планктонными водорослями и прикрепленными водорослями 
+                    в более прогретых прибрежных районах.
+                </p>
+                <h3>Фауна</h3>
+                <p>
+                    В Чукотском море обитают китообразные, моржи, тюлени, 
+                    множество морских птиц и холодолюбивые рыбы.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Берингово море -->
+<div class="modal" id="bering-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <img src="img/bering_big.webp" alt="Берингово море" class="modal-img">
+            <div class="modal-text">
+                <h2>Берингово море</h2>
+                <h3>Флора</h3>
+                <p>
+                    Флора включает богатые сообщества фитопланктона и прибрежных водорослей, 
+                    что обеспечивает высокую продуктивность экосистем.
+                </p>
+                <h3>Фауна</h3>
+                <p>
+                    Фауна очень разнообразна: тресковые рыбы, лососевые, крабы, 
+                    морские львы, киты и другие морские млекопитающие.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Охотское море -->
+<div class="modal" id="okhotsk-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <img src="img/okhotsk_big.jpg" alt="Охотское море" class="modal-img">
+            <div class="modal-text">
+                <h2>Охотское море</h2>
+                <h3>Флора</h3>
+                <p>
+                    В Охотском море множество бурых и красных водорослей, 
+                    а также богатый фитопланктон, поддерживающий пищевые цепи.
+                </p>
+                <h3>Фауна</h3>
+                <p>
+                    Фауна включает лососевых рыб, крабов, морских ежей, 
+                    множество беспозвоночных и морских млекопитающих.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Японское море -->
+<div class="modal" id="japan-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <img src="img/japan_big.jpg" alt="Японское море" class="modal-img">
+            <div class="modal-text">
+                <h2>Японское море</h2>
+                <h3>Флора</h3>
+                <p>
+                    Благодаря теплым и холодным течениям флора включает разнообразные водоросли 
+                    и богатые планктонные сообщества.
+                </p>
+                <h3>Фауна</h3>
+                <p>
+                    Фауна одна из самых богатых среди морей России: множество видов рыб, 
+                    моллюсков, ракообразных, а также дельфины и другие млекопитающие.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Балтийское море -->
+<div class="modal" id="baltic-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <img src="img/baltic_big.jpg" alt="Балтийское море" class="modal-img">
+            <div class="modal-text">
+                <h2>Балтийское море</h2>
+                <h3>Флора</h3>
+                <p>
+                    Из-за опреснения Балтики флора включает как морские, так и пресноводные виды водорослей, 
+                    а также прибрежную растительность заливов.
+                </p>
+                <h3>Фауна</h3>
+                <p>
+                    Фауна беднее, чем в открытых морях: немного морских рыб и беспозвоночных, 
+                    присутствуют пресноводные виды, приспособленные к солоноватой воде.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Черное море -->
+<div class="modal" id="black-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <img src="img/black_big.jpg" alt="Черное море" class="modal-img">
+            <div class="modal-text">
+                <h2>Черное море</h2>
+                <h3>Флора</h3>
+                <p>
+                    В верхнем слое распространены фитопланктон и бурые водоросли, 
+                    а также морские травы в прибрежной зоне.
+                </p>
+                <h3>Фауна</h3>
+                <p>
+                    Фауна богата у поверхности: рыбы, медузы, моллюски, дельфины, 
+                    но ниже 200 м из-за сероводорода почти нет жизни.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Азовское море -->
+<div class="modal" id="azov-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <img src="img/azov_big.jpg" alt="Азовское море" class="modal-img">
+            <div class="modal-text">
+                <h2>Азовское море</h2>
+                <h3>Флора</h3>
+                <p>
+                    В Азовском море хорошо развиты фитопланктон и водоросли, 
+                    особенно в районах впадения рек.
+                </p>
+                <h3>Фауна</h3>
+                <p>
+                    Фауна включает множество ракообразных, моллюсков и рыб, 
+                    в том числе виды, связанные с пресными водами, благодаря мелководности и прогреву.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Каспийское море -->
+<div class="modal" id="caspian-modal">
+    <div class="modal-content">
+        <button class="modal-close">&times;</button>
+        <div class="modal-body">
+            <img src="img/caspian_big.jpg" alt="Каспийское море" class="modal-img">
+            <div class="modal-text">
+                <h2>Каспийское море</h2>
+                <h3>Флора</h3>
+                <p>
+                    В прибрежной зоне распространены тростник, камыш и другая водная растительность, 
+                    а в толще воды развиты планктонные водоросли.
+                </p>
+                <h3>Фауна</h3>
+                <p>
+                    Каспийское море известно осетровыми, а также множеством видов рыб, 
+                    планктона и бентосных организмов; фауна сочетает морские и пресноводные элементы.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
